@@ -1,10 +1,10 @@
 #!/usr/bin/env sh
 
-echo 'checking';
+echo '>> checking';
 (cd autoload; git pull origin master)
-echo 'committing';
+echo '>> committing';
 git add .
 git commit -m 'update'
-echo 'pushing';
+echo '>> pushing';
 git push origin master
-echo 'DONE'
+echo '>> DONE'
